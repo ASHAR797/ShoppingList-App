@@ -51,14 +51,14 @@
     margin-right: 10px;
   }
   
-  #add-item-btn {
+  #add-item-btn  , .plus{
     padding: 10px 15px;
     background-color: #28a745;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
     transition: background-color 0.3s ease;
   }
   
@@ -89,7 +89,7 @@
     text-align: left;
   }
   
-  #shopping-list li button {
+  #shopping-list li button , .minus {
     background-color: #dc3545;
     color: #fff;
     border: none;
@@ -97,6 +97,12 @@
     padding: 5px 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+  }
+  .plus , .minus{
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+
   }
   
   #shopping-list li button:hover {

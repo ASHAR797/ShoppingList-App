@@ -1,6 +1,6 @@
 let addItem = document.querySelector('#add-item-btn')
 let itemInput = document.querySelector('#item-input')
-let shoppingList = document.querySelector('#shopping-list')   
+let shoppingList = document.querySelector('#shopping-list')
 let quantity = document.querySelector('#quantity')
 let plusButton = document.querySelector('.plus')
 let minusButton = document.querySelector('.minus')
@@ -12,11 +12,11 @@ plusButton.addEventListener('click', function () {
 minusButton.addEventListener('click', function () {
     if (currentQuantity > 0) {
         currentQuantity--;
-        quantity.textContent =  currentQuantity;
+        quantity.textContent = currentQuantity;
     }
 })
 
-addItem.addEventListener('click', function()  {
+addItem.addEventListener('click', function () {
     let listitem = document.createElement('li');
     let itemName = document.createElement('span');
     let quantityValue = document.createElement('span');
@@ -26,21 +26,23 @@ addItem.addEventListener('click', function()  {
     listitem.appendChild(removeButton)
     console.log(listitem)
     itemName.innerText = itemInput.value;
-    quantityValue.textContent = "Quantity: " + currentQuantity;
+    quantityValue.innerText = "Quantity: " + currentQuantity;
     removeButton.textContent = 'Delete';
-    if(itemInput.value === ""){
+    if (itemInput.value === "") {
         alert('Please enter an item');
         return;  // exit the function if the input is empty  // Add a check to prevent adding an empty item to the list.
     }
-    else{
+    else {
         shoppingList.appendChild(listitem);
     }
     itemInput.value = '';
+    currentQuantity = 1;
+    quantity.textContent = currentQuantity;
 })
 
-shoppingList.addEventListener('click', function(e) {
+
+shoppingList.addEventListener('click', function (e) {
     if (e.target.tagName === 'BUTTON') {
         e.target.parentNode.parentNode.removeChild(e.target.parentNode);
-    
     }
 })
