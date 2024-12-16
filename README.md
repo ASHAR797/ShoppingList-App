@@ -19,7 +19,8 @@ The **Shopping List App** is a simple yet effective tool to manage your shopping
 ## How to Use
 
 1. **Open the App**  
-   Open the `index.html` file in any modern web browser.
+   Visit the live version of the app here: [Shopping List App](https://ashar797.github.io/ShoppingList-App/).  
+   Alternatively, you can download the project and open the `index.html` file in any modern web browser.
 
 2. **Add Items**  
    Type an item name in the input field and click the "Add Item" button to include it in your list.
@@ -41,5 +42,3 @@ shopping-list-app/
 ├── styles.css   # The CSS file for styling
 ├── script.js    # The JavaScript file for interactivity
 └── README.md    # Project documentation
-
-
